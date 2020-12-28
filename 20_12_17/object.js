@@ -71,3 +71,19 @@ const user = {name: 'ellie', age: '20'};
 const user2 = user;
 user2.name = 'coder';
 console.log(user);
+
+//예전에는
+const user3= {};
+for(key in user){
+    user3[key] = user[key];
+}
+console.clear();
+console.log(user3);
+
+//간단하게 하는방법
+const user4 = {};
+Object.assign(user4, user);
+console.log(user4);
+//더 간단하게
+const user5=Object.assign({}, user);
+console.log(user5);

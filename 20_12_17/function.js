@@ -81,7 +81,7 @@ const simplePrint = function(){
     console.log('simplePrint!');
 };
 //더 쉬운방법
-const simplePrint = () => console.log('simplePrint!');
+const simplePrint1 = () => console.log('simplePrint!');
 const add = (a,b) => a+b;
 
 //IIFE
